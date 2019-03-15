@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_current"
+        app:titleTextColor="#ff9f34"
+        android:background="@drawable/gradient"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_current"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#131212"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/custombutton">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_gravity="center"
+                    android:layout_height="200dp"
+                    android:id="@+id/weatherIcon_curr"
+                    android:layout_margin="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/common_full_open_on_phone"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/temp_curr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custombutton"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#ff9f34" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ff9f34"
+                android:text=""
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:id="@+id/city_curr"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ff9f34"
+                android:text=""
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:id="@+id/country_curr"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ff9f34"
+                android:text=""
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:id="@+id/description_curr"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ff9f34"
+                android:text=""
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:id="@+id/details_curr"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custombutton">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/termp"
+                        android:padding="5dp"
+                        android:layout_weight="3"/>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="25dp"
+                                android:textColor="#ff9f34"
+                                android:text="Minimum"
+                                android:textAllCaps="false"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="25dp"
+                                android:textColor="#ff9f34"
+                                android:id="@+id/miniTemp_curr"
+                                android:text=""/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="25dp"
+                                android:text="Maximum"
+                                android:textColor="#ff9f34"
+                                android:textAllCaps="false"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="25dp"
+                                android:textColor="#ff9f34"
+                                android:id="@+id/maxTemp_curr"
+                                android:text=""/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custombutton">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/humidity"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textColor="#ff9f34"
+                        android:text="Humidity" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/humidity_curr"
+                        android:textColor="#ff9f34"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@drawable/custombutton">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/pressure"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textColor="#ff9f34"
+                        android:text="Pressure" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/pressure_curr"
+                        android:textColor="#ff9f34"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/wind"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:layout_height="wrap_content"
+                            android:text="Wind Speed"/>
+
+                        <TextView
+                            android:id="@+id/windSpeed_curr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:text="" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custombutton"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/sunset"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:layout_height="25dp"
+                            android:text="Sunrise"/>
+
+                        <TextView
+                            android:id="@+id/sunrise_curr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:text="Sunset" />
+
+                        <TextView
+                            android:id="@+id/sunset_curr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#ff9f34"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custombutton"
+            android:layout_margin="1dp"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:layout_weight="3"
+            android:src="@drawable/geolocation"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#ff9f34"
+                    android:layout_height="25dp"
+                    android:text="Latitude"/>
+
+                <TextView
+                    android:id="@+id/latitude_curr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ff9f34"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:textColor="#ff9f34"
+                    android:text="Longitude" />
+
+                <TextView
+                    android:id="@+id/longitude_curr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ff9f34"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

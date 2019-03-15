@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F0E0E"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <ImageView
+            android:foregroundGravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/splashImage"
+            android:src="@drawable/sun"
+            android:layout_marginBottom="15dp"
+            />
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="28dp"
+            android:id="@+id/currentWeather"
+            android:text="Current Weather Updates"
+            android:background="@drawable/custombutton"
+            android:layout_margin="5dp"
+            android:textColor="#ff9f34"/>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textSize="28dp"
+            android:id="@+id/forecast"
+            android:text="Weather Forecast"
+            android:background="@drawable/custombutton"
+            android:layout_margin="5dp"
+            android:textColor="#ff9f34"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
