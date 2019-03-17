@@ -30,4 +30,8 @@ Glide dependency is Used To load Images Into Recycler For the Icons Received Fro
 It Provide App With The JSON Data that is parsed Using Retrofit and RecyclerView.
 
 # ScreenShot
-<br><img src="https://github.com/Sanjeevsky/WeatherAPP/blob/master/ezgif-2-12822ae662fd.gif" height=550px width=350px>
+<div>
+<img src="https://github.com/Sanjeevsky/WeatherAPP/raw/master/demo/1.jpeg" height=550px >
+<img src="https://github.com/Sanjeevsky/WeatherAPP/raw/master/demo/2.jpeg" height=550px >
+<img src="https://github.com/Sanjeevsky/WeatherAPP/raw/master/demo/3.jpeg" height=550px >
+<img src="https://github.com/Sanjeevsky/WeatherAPP/raw/master/demo/4.jpeg" height=550px ></div>
