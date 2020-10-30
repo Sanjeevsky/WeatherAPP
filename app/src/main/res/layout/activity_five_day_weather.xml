@@ -7,14 +7,14 @@
     tools:context=".FiveDayWeather"
     android:background="@drawable/gradient">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient"
         app:titleTextColor="#ff9f34"
         android:id="@+id/toolbar_forecast"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_below="@id/toolbar_forecast"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/gradient">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar_current"
         app:titleTextColor="#ff9f34"
         android:background="@drawable/gradient"/>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_below="@id/toolbar_current"
         android:layout_height="wrap_content"
@@ -409,6 +409,6 @@
 
         </LinearLayout>
         </ScrollView>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
