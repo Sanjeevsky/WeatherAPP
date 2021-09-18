@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private static final String BaseUrl = "http://api.openweathermap.org/";
-    public static String AppId = "";
+    public static String AppId = "use-your-api-key";
     Location mLocation;
     TextView weatherData;
     String lat;

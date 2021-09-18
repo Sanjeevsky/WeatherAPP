@@ -43,7 +43,7 @@
                     android:id="@+id/weatherIcon_curr"
                     android:layout_margin="1dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/common_full_open_on_phone"
+                    android:src="@drawable/sun"
                     />
             </LinearLayout>
 

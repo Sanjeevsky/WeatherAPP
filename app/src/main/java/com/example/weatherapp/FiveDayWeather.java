@@ -49,7 +49,7 @@ public class FiveDayWeather extends AppCompatActivity implements GoogleApiClient
         GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private static final String BaseUrl = "http://api.openweathermap.org/";
-    public static String AppId = "";
+    public static String AppId = "use-your-api-key";
     Location mLocation;
     TextView weatherData;
     String lat;
@@ -268,6 +268,7 @@ public class FiveDayWeather extends AppCompatActivity implements GoogleApiClient
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
 
             case ALL_PERMISSIONS_RESULT:

@@ -29,7 +29,7 @@
                 android:id="@+id/weatherIcon"
                 android:layout_margin="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/common_full_open_on_phone" />
+                android:src="@drawable/sun" />
         </LinearLayout>
 
         <TextView
